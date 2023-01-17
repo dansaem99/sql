@@ -1,10 +1,10 @@
-select *
+select * -- 4개의 컬럼
+from departments;-- 테이블 네임이다.
+
+select department_id, location_id -- 2개
 from departments;
 
-select department_id, location_id
-from departments;
-
-select location_id, department_id
+select location_id, department_id -- 순서는 마음대로
 from departments;
 
 desc departments
@@ -47,10 +47,12 @@ from employees;
 -- 여기서 ||를 사용하면 하나의 칼럼select로 만들 수 있다.
 select last_name || job_id
 from employees;
+--리턴값이 캐릭터다.
 
 -- last_name 변수명, '' 상수, job_id 변수이다.
 select last_name || ' is ' || job_id
 from employees;
+--''이게 캐릭터다.
 
 -- 별명을 넣었다.
 select last_name || ' is ' || job_id employee
