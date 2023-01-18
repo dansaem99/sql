@@ -166,4 +166,5 @@ select last_name, salary, rpad('*' , salary / 1000, '*')
 from employees;
 -- ¼±»ý´Ô ´ä
 select last_name, salary, rpad(' ' , salary / 1000 + 1, '*')
-from employees;
+from employees
+order by sal desc;
