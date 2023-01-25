@@ -157,7 +157,7 @@ select * from dept;
 delete emp
 where department_id = (
     select department_id
-    from departments
+    from dept
     where department_name = 'Purchasing');
     
 select * from emp;
