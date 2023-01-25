@@ -28,7 +28,7 @@ from employees;
 /*job_id는 jobs의 테이블들어가 
 데이터에 들어가면 약자를 볼 수 있음*/
 
-select last_name, job_id, 12 * selary + (12 * salary * commission_pct)
+select last_name, job_id, 12 * salary + (12 * salary * commission_pct)
 from employees;
 
 select last_name as name, commission_pct comm
